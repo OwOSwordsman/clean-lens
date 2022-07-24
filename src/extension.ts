@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
 	// disable error lens
-	const enableMessage = vscode.commands.registerCommand('clean-editor.enableMessage', () => {
+	const enableLens = vscode.commands.registerCommand('clean-editor.enableLens', () => {
 		const configuration = vscode.workspace.getConfiguration("errorLens.enabled");
 		const currentValue = configuration.get("globalValue");
 		if (!(currentValue || currentValue === undefined)) {
@@ -11,7 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	// enable error lens
-	const disableMessage = vscode.commands.registerCommand('clean-editor.disableMessage', () => {
+	const disableLens = vscode.commands.registerCommand('clean-editor.disableLens', () => {
 		const configuration = vscode.workspace.getConfiguration("errorLens.enabled");
 		const currentValue = configuration.get("globalValue");
 		if (currentValue || currentValue === undefined) {
@@ -19,8 +19,8 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 	});
 
-	context.subscriptions.push(enableMessage);
-	context.subscriptions.push(disableMessage);
+	context.subscriptions.push(enableLens);
+	context.subscriptions.push(disableLens);
 }
 
 export function deactivate() { }

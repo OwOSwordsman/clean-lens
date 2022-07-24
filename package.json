@@ -10,19 +10,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:clean-editor.enableMessage",
-		"onCommand:clean-editor.disableMessage"
+		"onCommand:clean-editor.enableLens",
+		"onCommand:clean-editor.disableLens"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "clean-editor.enableMessage",
-				"title": "Enable Error Lens Message"
+				"command": "clean-editor.enableLens",
+				"title": "Enable Error Lens"
 			},
 			{
-				"command": "clean-editor.disableMessage",
-				"title": "Disable Error Lens Message"
+				"command": "clean-editor.disableLens",
+				"title": "Disable Error Lens"
 			}
 		]
 	},
