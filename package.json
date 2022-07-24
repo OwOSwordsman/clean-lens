@@ -1,6 +1,6 @@
 {
-	"name": "clean-editor",
-	"displayName": "Clean Editor",
+	"name": "clean-lens",
+	"displayName": "Clean Lens",
 	"description": "",
 	"version": "0.0.1",
 	"engines": {
@@ -10,18 +10,18 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:clean-editor.enableLens",
-		"onCommand:clean-editor.disableLens"
+		"onCommand:clean-lens.enableLens",
+		"onCommand:clean-lens.disableLens"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "clean-editor.enableLens",
+				"command": "clean-lens.enableLens",
 				"title": "Enable Error Lens"
 			},
 			{
-				"command": "clean-editor.disableLens",
+				"command": "clean-lens.disableLens",
 				"title": "Disable Error Lens"
 			}
 		]
