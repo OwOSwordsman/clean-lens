@@ -1,11 +1,20 @@
 {
 	"name": "clean-lens",
 	"displayName": "Clean Lens",
-	"description": "",
+	"description": "Add commands to specifically enable/disable `Error Lens`",
 	"version": "0.0.1",
+	"publisher": "OwOSwordsman",
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/OwOSwordsman/clean-lens"
+	},
 	"engines": {
 		"vscode": "^1.69.0"
 	},
+	"extensionDependencies": [
+		"usernamehw.errorlens"
+	],
 	"categories": [
 		"Other"
 	],
